@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>My Games</title>
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- CSS Framework File -->
+    <link rel="stylesheet" href="css/framework.css">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- main Template CSS File  -->
     <link rel="stylesheet" href="css/master.css">
+    <!-- Second Template CSS File -->
+    <link rel="stylesheet" href="css/masterTwo.css">
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,73 +24,73 @@
 </head>
 
 <body>
-    <!-- Start Header -->
-    <div class="header header-back" id="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo">
-            </a>
-            <nav>
-                <i class="fas fa-bars toggle-menu"></i>
-                <ul class="principal-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="discoverGames.html">Discover Games</a></li>
-                    <li><a href="darkAi.html">DARK AI</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a class="active" href="#">Sign In/Sign Up</a></li>
-                </ul>
-                <div class="form">
-                    <i class="fas fa-search"></i>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- End Header -->
-    <!-- Start Sign -->
-    <div class="sign-in">
+    <div class="page-dark-ai d-flex p-relative">
         <div class="overlay"></div>
-        <div class="container">
-            <h1>Welcome</h1>
-            <div class="content">
-                <div class="left-side">
-                    <p>Please enter your details</p>
-                    <form action="">
-                        <input type="email" class="input" placeholder="Email" name="email">
-                        <input type="password" class="input" placeholder="Password" name="password">
-                        <div class="text">
-                            <div class="remember">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">Remember Me</label>
-                            </div>
-                            <div class="forget">
-                                <a href="">
-                                    <p>Forgot My password?</p>
-                                </a>
-                            </div>
-                        </div>
-                        <input type="submit" class="input" value="Sign In">
-                        <div class="have-account">
-                            <span>Dont-Have any account ?</span>
-                            <div class="up"><a href="signUp.html">Sign Up</a></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="right-side">
-                    <p>Or</p>
-                    <a href="#" class="facebook">
-                        <i class=" fa-brands fa-facebook fa-2x"></i>
-                        <span>Sign in with Facebook</span>
+        <!-- p-relative => Sidebar above Contents -->
+        <div class="sidebar-ai p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Dark AI</h3>
+            <ul>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10 chat" href="profile.html">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="ml-0">New Chat</span>
                     </a>
-                    <a href="#" class="google">
-                        <i class="fa-brands fa-google fa-2x"></i>
-                        <span>Sign in with Google</span>
+                </li>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
                     </a>
+                </li>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10" href="myGames.html">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>My Games</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10" href="discoverGames.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Discover Games</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10" href="discoverGames.html">
+                        <i class="fa-solid fa-users-line"></i>
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="center-flex fs-14 rad-6 p-10" href="discoverGames.html">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- <a href="signIn.html" class="p-absolute d-block">Sign In/Sign Up</a> -->
+            <div class="user center-flex">
+                <img src="images/redouane.jpg" alt="">
+                <span>@redx_one</span>
+            </div>
+        </div>
+        <div class="content-dark-ai w-full p-relative">
+            <div class="help center-flex fd-column p-absolute">
+                <img src="images/logo.png" alt="">
+                <p>Hello How Can I Help You Today?</p>
+            </div>
+            <div class="container-one">
+                <div class="search-bar-container">
+                    <button class="file-button">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <input type="text" placeholder="Enter your query here" class="search-bar">
+                    <button class="send-button">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Sign -->
     <!-- Start Footer -->
     <div class="footer">
         <div class="container">
@@ -154,7 +158,6 @@
         <!-- <p class="copyright">Made With <span>&lt;3</span> By Redouane</p> -->
     </div>
     <!-- End Footer -->
-
 
 </body>
 
