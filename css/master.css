@@ -837,6 +837,7 @@ ul {
 
 .create .content .text .dreams,
 .discover-Games .dreams {
+    display: block;
     background-color: var(--main-color);
     width: fit-content;
     padding: 20px;
@@ -845,6 +846,7 @@ ul {
     border-radius: 12px;
     transition: var(--main-transition-duration);
     cursor: pointer;
+    color: black;
 }
 
 .create .content .text .dreams:hover,
@@ -854,7 +856,7 @@ ul {
     transform: translateY(-3px);
 }
 
-/* Start End Create*/
+/*End Create*/
 
 /* Start Footer */
 .footer {
