@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Forge</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main Template CSS File  -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header header-back" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul class="principal-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="discoverGames.html">Discover Games</a></li>
+                    <li><a href="darkAi.html">DARK AI</a></li>
+                    <li><a href="#features">About Us</a></li>
+                    <li><a href="#features">Contact Us</a></li>
+                    <li><a href="signIn.html">Sign In/Sign Up</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="profile">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <a href="#">
+                        <img src="images/redouane.jpg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End Header -->
+    <!-- Start Custome Game -->
+    <div class="customGame-welcome">
+        <div class="container">
+            <div class="text">
+                <h1>Welcome, To <span>Dark Forge World</span></h1>
+                <p>"Unleash the power of your gaming vision, And embark on a journey to bring your masterpiece to life"
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/landing-image.png" alt="">
+            </div>
+        </div>
+        <a href="#features" class="go-down">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+    </div>
+    <!-- End Custome Game -->
+    <section class="curved"></section>
+    <!-- Start Features -->
+    <div class="features">
+        <h2 class="main-title" id="features">Features</h2>
+        <div class="container">
+            <div class="box quality">
+                <div class="img-holder">
+                    <img src="images/c1.avif" alt="">
+                </div>
+                <h2>Passion</h2>
+                <p>Promote an environment where new and innovative ideas are valued and explored.</p>
+                <a href="#form">More</a>
+            </div>
+            <div class="box time">
+                <div class="img-holder">
+                    <img src="images/c4.jpg" alt="">
+                </div>
+                <h2>Visionary</h2>
+                <p>Craft a clear and compelling vision for your game, guided by expertise in player psychology.</p>
+                <a href="#form">More</a>
+            </div>
+            <div class="box passion">
+                <div class="img-holder">
+                    <img src="images/c3.avif" alt="">
+                </div>
+                <h2>Challenge</h2>
+                <p>Games should offer a satisfying level of challenge to keep players engaged and motivated.</p>
+                <a href="#form">More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Game Form -->
+    <div class="gameForm" id="discount">
+        <div class="image">
+            <div class="content">
+                <h2>Submit Your <span>Dream Game Idea!</span></h2>
+                <p>Have you ever dreamt of a game so unique, so addictive, it would take the world by storm? Well, stop
+                    dreaming and start creating! We're looking for passionate gamers like you to unleash their inner
+                    gamechanger and submit their ideas for the next
+                    groundbreaking game.</p>
+                <img src="images/megamenu.png" alt="">
+            </div>
+        </div>
+        <div class="form" id="form">
+            <div class="content">
+                <h2>Please Fill The Information down <span>Here !</span></h2>
+                <form action="">
+                    <input type="text" class="input" placeholder="Game Idea Title" name="Title" required>
+                    <input type="email" class="input" placeholder="Game Description" name="Game_Description" required>
+                    <label for="genre">Genres
+                    </label>
+                    <select id="genre" name="genre" required>
+                        <option>Puzzle</option>
+                        <option>Adventure</option>
+                        <option>Strategy</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea class="input" placeholder="Gameplay, Describle the core mechanics"
+                        name="Gameplay"></textarea>
+                    <textarea class="input" placeholder="Tell Us About Unique Features"
+                        name="Unique_Features"></textarea>
+                    <label for="audience">Target Audience <span>Who do you imagine playing this game?</span>
+                    </label>
+                    <select id="audience" name="audience" required>
+                        <option>Children (Under 13)</option>
+                        <option>Teenagers (13-18)</option>
+                        <option>Young Adults (19-34)</option>
+                        <option>Adults (35-54)</option>
+                        <option>Seniors (55+)</option>
+                    </select>
+                    <label for="attach-document" class="upload">Attach a Document:
+                        <div class="custom-file-upload">
+                            <i class="fas fa-paperclip">
+                            </i>
+                            <!-- <p>Choose File</p> -->
+                        </div>
+                        <input type="file" id="attach-document" name="attach-document">
+                    </label>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Game Form -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>Dark Forge</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">Your best immersive and engaging gaming experiences</p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="discoverGames.html">Games</a></li>
+                    <li><a href="#">Create Your Game</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">
+                        Algeria, Bejaia, Amizour, École supérieure en Sciences et Technologies de l'Informatique et du
+                        Numérique, N75
+                    </div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">
+                        Business Hours: From 10:00 To 18:00
+                    </div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20123456789</span>
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img src="images/exit.webp" alt="">
+                <img src="images/door1.webp" alt="">
+                <img src="images/gallery-03.jpg" alt="">
+                <img src="images/gallery-04.png" alt="">
+                <img src="images/gallery-05.jpg" alt="">
+                <img src="images/gallery-06.png" alt="">
+            </div>
+        </div>
+        <!-- <p class="copyright">Made With <span>&lt;3</span> By Redouane</p> -->
+    </div>
+    <!-- End Footer -->
+
+
+</body>
+
+</html>
