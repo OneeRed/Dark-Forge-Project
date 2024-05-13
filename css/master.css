@@ -590,12 +590,13 @@ ul {
     padding: 40px;
     background-color: #00000061;
     transition: var(--main-transition-duration);
+    border: 1px solid #636363;
 }
 
 
 .description .text:hover {
     /* transform: translateY(-10px); */
-    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 45%);
 }
 
 .description .text h2 {
@@ -641,12 +642,14 @@ ul {
     border-radius: 6px;
     position: relative;
     transition: var(--main-transition-duration);
+    border: 1px solid black;
 }
 
 .description .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
     background-color: #22184e;
+    border-color: var(--main-color-alt);
 }
 
 
@@ -783,6 +786,12 @@ ul {
 
 .best-games .games .game-name .box .title {
     font-size: 25px;
+    color: white;
+}
+
+.best-games .games .game-name .box:hover .title,
+.best-games .games .game-name .active .title {
+    color: black;
 }
 
 
@@ -853,6 +862,12 @@ ul {
     margin-bottom: 30px;
     margin-top: 0;
     line-height: 1.6;
+    border: 1px solid #636363;
+    transition: var(--main-transition-duration);
+}
+
+.create .content .text p:hover {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 45%);
 }
 
 
@@ -1097,6 +1112,11 @@ ul {
 
 .sign-up .content {
     align-items: center;
+}
+
+.sign-in .container,
+.sign-up .content .left-side {
+    border: 1px solid #464646;
 }
 
 
@@ -1494,6 +1514,15 @@ ul {
     /* color: var(--main-color); */
 }
 
+.discover-Games .my-games .my-games-title {
+    transition: var(--main-transition-duration);
+}
+
+.discover-Games .my-games .my-games-title:hover {
+    color: var(--main-color);
+}
+
+
 .discover-Games .trending h2:before {
     content: "\f06d";
 }
@@ -1528,7 +1557,6 @@ ul {
 .discover-Games .create-title:before {
     content: "\f0eb";
 }
-
 
 
 
